@@ -103,3 +103,29 @@ footer form {
   margin-left: 2rem;
   display: inline;
 }
+
+body {   color: lightgray; }
+
+@@media (min-width: 410px) {
+  body {   color: orange; }
+}
+
+@@media (min-width: 700px) /*and (max-width: 700px) */{
+  body {   color: purple; }
+  img {border: 1px solid purple;}
+}
+
+
+@@media  (min-width: 1101px) /*(min-width: 701px) and (max-width: 1100px)*/ {
+  body {   color: blue; }
+}
+
+
+@@media (min-width: 1101px), (orientation: landscape) {
+  body {   color: green; }
+  h1 { text-decoration: underline;}
+}
+
+/*body {
+  color: yellow;
+}*/
